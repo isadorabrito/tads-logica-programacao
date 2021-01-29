@@ -8,7 +8,7 @@ public class Ex020 {
         
         System.out.print("Digite o número de eleitores: ");
         teleitores = in.nextInt();
-        System.out.print("Digite o número de votos válidos ");
+        System.out.print("Digite o número de votos válidos: ");
         vvalidos = in.nextInt();
         System.out.print("Digite o número de votos em branco: ");
         vbrancos = in.nextInt();
