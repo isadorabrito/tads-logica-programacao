@@ -10,8 +10,8 @@ public class Ex002 {
         System.out.print("Digite um valor real: ");
         valor = in.nextDouble();
 
-        total = valor + (valor * 0.20);
+        total = valor * 1.20;
 
-        System.out.println ("O total com 20% é " +total);
+        System.out.printf ("O total com 20%% é R$ %.2f reais.%n", total);
     }
 }
