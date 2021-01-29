@@ -4,12 +4,12 @@ public class Ex021 {
 
         Scanner in = new Scanner(System.in);
 
-        double raio,diametro,comprimento,area,pi;
+        float raio,diametro,comprimento,area,pi;
        
         System.out.print("Qual o raio da circunferência? ");
         raio = in.nextFloat();
 
-        pi = 3.141692;
+        pi = 3.141692f;
         diametro = raio* 2;
         comprimento = 2 * pi * raio;
         area = pi * (raio*raio);
