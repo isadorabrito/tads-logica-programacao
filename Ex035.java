@@ -16,7 +16,7 @@ public class Ex035 {
 
         System.out.println("A quantidade média de estoque é "+qmedia);
 
-        if (estoqueatual>=qmedia) {
+        if (estoqueatual >= qmedia) {
             System.out.println("Nao efetuar compra.");
         } else {
             System.out.println("Efetuar compra.");
