@@ -14,7 +14,7 @@ public class Ex036 {
         homem2 = in.nextInt();
         mulher2 = in.nextInt();
 
-        if (homem1 > homem2 && mulher1>mulher2) {
+        if (homem1 > homem2 && mulher1 > mulher2) {
             hnovo = homem2;
             hvelho = homem1;
             mnova = mulher2;
