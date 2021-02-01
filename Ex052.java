@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class Ex052 {
    public static void main(String[] args) {
 
-    Scanner in = new Scanner(System.in);
+      Scanner in = new Scanner(System.in);
 
       int n, numero, soma;
 
@@ -16,6 +16,6 @@ public class Ex052 {
       soma = soma + numero;
       numero++;
       }
-      System.out.println(soma);
+      System.out.println("Soma: " +soma);
    }
 }
