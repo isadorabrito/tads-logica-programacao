@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex074 {
     public static void main(String[] args) {
 
@@ -16,9 +17,11 @@ public class Ex074 {
         while (massa >= 0.10f) {
             perda = massa * 0.75f;
             massa = massa - perda;
-        cont++;
+            cont++;
         }
-        tempo = cont*30;
-        System.out.printf("O tempo necessário para que a massa desse material se torne menor que 0,10 gramas é %d segundos.%n", tempo);
+        tempo = cont * 30;
+        System.out.printf(
+                "O tempo necessário para que a massa desse material se torne menor que 0,10 gramas é %d segundos.%n",
+                tempo);
     }
 }

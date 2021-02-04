@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex075 {
     public static void main(String[] args) {
 
@@ -21,33 +22,33 @@ public class Ex075 {
         nome = in.next();
 
         while (!nome.equals(arroba)) {
-        System.out.print("Digite seu sexo: [f] para feminino e [m] para masculino ");
-        sexo = in.next().charAt(0);
-        System.out.print("Digite a sua idade: ");
-        idade = in.nextInt();
-        idadestotal = idadestotal + idade;
-        if (sexo == 'f') {
-            System.out.print("Digite o seu peso: ");
-            pesofem = in.nextFloat();
-            if (pesofem > maiorpesofem) {
-                maiorpesofem = pesofem;
-                nomepeso = nome;
+            System.out.print("Digite seu sexo: [f] para feminino e [m] para masculino ");
+            sexo = in.next().charAt(0);
+            System.out.print("Digite a sua idade: ");
+            idade = in.nextInt();
+            idadestotal = idadestotal + idade;
+            if (sexo == 'f') {
+                System.out.print("Digite o seu peso: ");
+                pesofem = in.nextFloat();
+                if (pesofem > maiorpesofem) {
+                    maiorpesofem = pesofem;
+                    nomepeso = nome;
+                }
+            } else {
+                System.out.print("Digite sua altura: ");
+                alturamasc = in.nextFloat();
+                if (alturamasc > maioralturamasc) {
+                    maioralturamasc = alturamasc;
+                    nomealtura = nome;
+                }
             }
-        } else {
-            System.out.print("Digite sua altura: ");
-            alturamasc = in.nextFloat();
-            if (alturamasc > maioralturamasc) {
-                maioralturamasc = alturamasc;
-                nomealtura = nome;
-            }
+            System.out.print("Digite o nome do atleta ou @ para sair: ");
+            nome = in.next();
+            cont++;
         }
-        System.out.print("Digite o nome do atleta ou @ para sair: ");
-        nome = in.next();
-        cont++;
-        }
-        mediaidade = (float) idadestotal/cont;
-        System.out.println("A media entre as idades é "+mediaidade);
-        System.out.println("A atleta mais pesada é a "+nomepeso+" com "+maiorpesofem+" kg.");
-        System.out.println("O atleta mais alto é o "+nomealtura+" com "+maioralturamasc+" metros.");
+        mediaidade = (float) idadestotal / cont;
+        System.out.println("A media entre as idades é " + mediaidade);
+        System.out.println("A atleta mais pesada é a " + nomepeso + " com " + maiorpesofem + " kg.");
+        System.out.println("O atleta mais alto é o " + nomealtura + " com " + maioralturamasc + " metros.");
     }
 }

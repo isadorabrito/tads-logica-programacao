@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex073 {
     public static void main(String[] args) {
 
@@ -21,8 +22,8 @@ public class Ex073 {
         while (x < y) {
             x = x + natx;
             y = y + naty;
-        cont++;
+            cont++;
         }
-        System.out.println("Para a população do pais A ultrapassar o pais B levara "+cont+" anos");
+        System.out.println("Para a população do pais A ultrapassar o pais B levara " + cont + " anos");
     }
 }
