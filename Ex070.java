@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex070 {
     public static void main(String[] args) {
 
@@ -14,10 +15,10 @@ public class Ex070 {
         n = in.nextInt();
 
         while (cont <= n) {
-        System.out.println(f);
-        s = s + f;
-        f = s - f;       
-        cont++;
+            System.out.println(f);
+            s = s + f;
+            f = s - f;
+            cont++;
         }
     }
 }

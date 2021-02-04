@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex068 {
     public static void main(String[] args) {
 
@@ -24,7 +25,7 @@ public class Ex068 {
                 pagbruto = ((horatrabex * 1.5f * valorhora) + 40 * valorhora);
                 System.out.printf("O valor do pagamento bruto ao funcionario %d é R$ %.2f reais.%n", cont, pagbruto);
             }
-        cont++;
+            cont++;
         }
     }
 }

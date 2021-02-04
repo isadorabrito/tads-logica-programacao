@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex064 {
     public static void main(String[] args) {
 
@@ -6,7 +7,7 @@ public class Ex064 {
         float nota1, nota2, nota3, menor, media;
 
         System.out.print("Digite suas três nota: ");
-        nota1 = in.nextFloat(); 
+        nota1 = in.nextFloat();
         nota2 = in.nextFloat();
         nota3 = in.nextFloat();
 
@@ -17,7 +18,7 @@ public class Ex064 {
         } else {
             menor = nota3;
         }
-        media = (nota1 + nota2 + nota3 - menor)/2;
+        media = (nota1 + nota2 + nota3 - menor) / 2;
         System.out.printf("A media foi %.1f.%n", media);
     }
 }

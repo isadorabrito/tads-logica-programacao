@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex065 {
     public static void main(String[] args) {
 
@@ -11,7 +12,7 @@ public class Ex065 {
         mult = 1;
         soma = 0;
 
-        while(n < 10) {
+        while (n < 10) {
             System.out.print("Digite um valor: ");
             valor = in.nextFloat();
 
@@ -22,7 +23,7 @@ public class Ex065 {
             }
             n++;
         }
-        System.out.println("A multiplicação entre valores digitados no intervalo de 0 e 10 é "+mult);
-        System.out.println("A soma dos valores fora deste intervalo é "+soma);
+        System.out.println("A multiplicação entre valores digitados no intervalo de 0 e 10 é " + mult);
+        System.out.println("A soma dos valores fora deste intervalo é " + soma);
     }
 }

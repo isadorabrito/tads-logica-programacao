@@ -1,9 +1,10 @@
 import java.util.Scanner;
+
 public class Ex066 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-       
+
         int n, cont, aux;
         cont = 1;
         aux = 0;
@@ -12,10 +13,10 @@ public class Ex066 {
         n = in.nextInt();
 
         while (cont <= n) {
-            if (n%cont == 0) {
+            if (n % cont == 0) {
                 aux++;
             }
-        cont++;
+            cont++;
         }
         if (aux <= 2) {
             System.out.println("É primo");
