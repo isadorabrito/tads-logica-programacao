@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex063 {
     public static void main(String[] args) {
 
@@ -10,9 +11,9 @@ public class Ex063 {
         valor = in.nextInt();
 
         while (valor % 5 != 0) {
-        System.out.print("Digite um valor:");
-        valor = in.nextInt();
+            System.out.print("Digite um valor:");
+            valor = in.nextInt();
         }
-        System.out.println("O valor "+valor+" é multiplo de 5.");
+        System.out.println("O valor " + valor + " é multiplo de 5.");
     }
 }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex062 {
     public static void main(String[] args) {
 
@@ -11,11 +12,11 @@ public class Ex062 {
         b = in.nextFloat();
 
         while (b == 0) {
-        System.out.print("Segundo valor inválido. Digite novamente: ");
-        b = in.nextFloat();
+            System.out.print("Segundo valor inválido. Digite novamente: ");
+            b = in.nextFloat();
         }
 
-        div = a/b;
-        System.out.println("A divisão entre "+a+" e " +b+" é "+div);
+        div = a / b;
+        System.out.println("A divisão entre " + a + " e " + b + " é " + div);
     }
 }

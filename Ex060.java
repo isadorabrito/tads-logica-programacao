@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex060 {
     public static void main(String[] args) {
 
@@ -13,6 +14,6 @@ public class Ex060 {
             System.out.println("Digite uma idade válida: ");
             idade = in.nextInt();
         }
-        System.out.println(idade+" anos.");
+        System.out.println(idade + " anos.");
     }
 }

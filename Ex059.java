@@ -1,10 +1,11 @@
 import java.util.Scanner;
+
 public class Ex059 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
-        float valorcada,valortotal,media;
+        float valorcada, valortotal, media;
         int nmercadorias, cont;
 
         cont = 1;
@@ -20,7 +21,7 @@ public class Ex059 {
             cont++;
         }
 
-        media = valortotal/nmercadorias;
+        media = valortotal / nmercadorias;
         System.out.printf("O valor total em estoque é R$ %.2f.%n", valortotal);
         System.out.printf("A media dos valores das mercadorias é %.1f.%n", media);
     }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex058 {
     public static void main(String[] args) {
 
@@ -10,7 +11,7 @@ public class Ex058 {
         System.out.print("Digite sua senha: ");
         senha = in.nextInt();
 
-        while (senha!=12345) {
+        while (senha != 12345) {
             System.out.print("Digite sua senha: ");
             senha = in.nextInt();
             cont++;

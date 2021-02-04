@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex057 {
     public static void main(String[] args) {
 

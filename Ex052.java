@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Ex052 {
    public static void main(String[] args) {
 
@@ -13,9 +14,9 @@ public class Ex052 {
       n = in.nextInt();
 
       while (numero <= n) {
-      soma = soma + numero;
-      numero++;
+         soma = soma + numero;
+         numero++;
       }
-      System.out.println("Soma: " +soma);
+      System.out.println("Soma: " + soma);
    }
 }
