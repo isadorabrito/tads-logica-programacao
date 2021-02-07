@@ -5,7 +5,7 @@ public class ModeloProva0101 {
 
         Scanner in = new Scanner(System.in);
 
-        int n, maior=0, menor=0, igual=0;
+        int n, maior = 0, menor = 0, igual = 0;
         int cont = 1;
         while (cont <= 100) {
             System.out.print("Digite o numero: ");
