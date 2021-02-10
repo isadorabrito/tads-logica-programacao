@@ -1,6 +1,6 @@
 import java.util.Calendar;
 import java.util.Scanner;
-public class Ex018a {
+public class Ex006a {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
