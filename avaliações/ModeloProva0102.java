@@ -1,4 +1,3 @@
-package Avaliações;
 import java.util.Scanner;
 
 public class ModeloProva0102 {
