@@ -1,26 +1,24 @@
 import java.util.Scanner;
 
-public class Ex054 {
+public class Ex015 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
 
-        int numero, cont, n;
+        int n, cont, aux;
+        cont = 1;
+        aux = 0;
 
-        numero = 1;
-        cont = 0;
-
-        System.out.print("Digite um valor de n: ");
+        System.out.print("Insira o número: ");
         n = in.nextInt();
 
-        while (numero <= n) {
-            if (n % numero == 0) {
-                cont++;
+        while (cont <= n) {
+            if (n % cont == 0) {
+                aux++;
             }
-            numero++;
+            cont++;
         }
-
-        if (cont <= 2) {
+        if (aux <= 2) {
             System.out.println("É primo");
         } else {
             System.out.println("Não é primo");
