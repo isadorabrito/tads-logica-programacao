@@ -22,6 +22,7 @@ public class ModeloProva0107 {
                 }
                 System.out.print(divisor + " ");
                 numero = numero / divisor;
+
             } else {
                 divisor++;
                 trocou = true;
