@@ -5,10 +5,21 @@ public class Ex001 {
 
         Scanner in = new Scanner(System.in);
 
-        int matricula = 1, idade, maior = 0, h = 0, f = 0;
-        int i = 0, fh = 0, fm = 0, qf = 0, sm = 0;
-        char sexo, concursado;
-        float altura, somaalt = 0, maltura = 0;
+        int matricula = 1;
+        int idade;
+        float altura;
+        boolean concursado;
+        char genero;
+
+        int totalFemConcursada = 0;
+        int totalHomens = 0;
+        int concursadoMaisVelho = 0;
+        int mulheres30SemConcurso = 0;
+        int totalConcursados = 0;
+
+        int tHomensMenos40 = 0;
+        float somaAlturasHomens = 0;
+        float mediaAlturaHomensMenos40;
 
         while (matricula != 0) {
 
@@ -20,51 +31,55 @@ public class Ex001 {
             }
 
             System.out.print("Digite seu gênero: ");
-            sexo = in.next().charAt(0);
+            genero = in.next().charAt(0);
 
-            if (sexo == 'm') {
-                System.out.println("Digite a sua altura: ");
-                altura = in.nextFloat();
-                if (altura < 40) {
-                    somaalt = (somaalt + altura);
-                    sm++;
-                }
-                System.out.println("Digite se você é concursado: [s] ou [n]: ");
-                concursado = in.next().charAt(0);
-                if (concursado == 's') {
-                    System.out.print("Digite sua idade: ");
-                    idade = in.nextInt();
-                    if (idade > maior) {
-                        maior = idade;
-                    }
-                    fh++;
-                }
-                h++;
-            } else if (sexo == 'f') {
-                System.out.println("Digite se você é concursado: [s] ou [n]: ");
-                concursado = in.next().charAt(0);
-                if (concursado == 'n') {
-                    System.out.print("Digite sua idade: ");
-                    idade = in.nextInt();
+            System.out.print("Digite a sua altura: ");
+            altura = in.nextFloat();
+
+            System.out.print("Digite sua idade: ");
+            idade = in.nextInt();
+
+            System.out.print("Digite se você é concursado: ");
+            concursado = in.nextBoolean();
+
+            if (genero == 'f') {
+                if (concursado == true) {
+                    totalFemConcursada++;
+
+                } else {
                     if (idade > 30) {
-                        i++;
+                        mulheres30SemConcurso++;
                     }
-                } else if (concursado == 's') {
-                    fm++;
                 }
-                f++;
-            } else {
-                System.out.println("gênero não identificado. Digite [f] ou [m]: ");
             }
-            qf = fh + fm;
-            maltura = somaalt / sm;
 
+            if (genero == 'm') {
+                totalHomens++;
+
+                if (idade < 40) {
+                    tHomensMenos40++;
+                    somaAlturasHomens += altura;
+                }
+            }
+
+            if (genero == 'm' && concursado) {
+                if (idade > concursadoMaisVelho) {
+                    concursadoMaisVelho = idade;
+                }
+            }
+
+            if (concursado) {
+                totalConcursados++;
+            }
         }
-        System.out.println("número de funcionárias concursadas: " + f);
-        System.out.println("número de funcionários concursados: " + h);
-        System.out.println("Maior idade dos homens concursados: " + maior);
-        System.out.println("Quantidade de mulheres com mais de 30 anos sem concurso: " + i);
-        System.out.println("Quantidade de concursados: " + qf);
-        System.out.println("A média das alturas dos homens com menos de 40 anos é " + maltura);
+
+        mediaAlturaHomensMenos40 = somaAlturasHomens / tHomensMenos40;
+
+        System.out.println("Número de funcionárias concursadas: " + totalFemConcursada);
+        System.out.println("Número de funcionários concursados: " + totalHomens);
+        System.out.println("Maior idade dos homens concursados: " + concursadoMaisVelho);
+        System.out.println("Quantidade de mulheres com mais de 30 anos sem concurso: " + mulheres30SemConcurso);
+        System.out.println("Quantidade de concursados: " + totalConcursados);
+        System.out.println("A média das alturas dos homens com menos de 40 anos é " + mediaAlturaHomensMenos40);
     }
 }
