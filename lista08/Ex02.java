@@ -45,9 +45,6 @@ public class Ex02 {
                 face6++;
             }
         }
-        System.out.println("O numero 1 obteve " + face1 + " ocorrências.\nO numero 2 obteve " + face2
-                + " ocorrências.\nO numero 3 obteve " + face3 + " ocorrências.\nO numero 4 obteve " + face4
-                + " ocorrências.\nO numero 5 obteve " + face5 + " ocorrências.\nO numero 6 obteve " + face6
-                + " ocorrências.");
+        System.out.println("A face 1 obteve " + face1 + " ocorrência(s).\nA face 2 obteve " + face2 + " ocorrência(s).\nA face 3 obteve " + face3 + " ocorrência(s).\nA face 4 obteve " + face4 + " ocorrência(s).\nA face 5 obteve " + face5 + " ocorrência(s).\nA face 6 obteve " + face6 + " ocorrência(s).");
     }
 }
