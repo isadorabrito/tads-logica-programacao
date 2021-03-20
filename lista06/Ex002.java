@@ -10,15 +10,15 @@ public class Ex002 {
 
         while (repeticao.equals("Sim")) {
 
-        System.out.print("Digite um número inteiro positivo: ");
-        n = in.nextInt();
+            System.out.print("Digite um número inteiro positivo: ");
+            n = in.nextInt();
 
             if (n > 0) {
                 System.out.println("Numero digitado: " + n);
                 System.out.print("Numero pares entre 1 e " + n + ": ");
-                for (int i = 1; i < n; i++) {
+                for (int i = 1; i < n; i++){ 
                     if (i % 2 == 0) {
-                        System.out.print(i +"; ");
+                        System.out.print(i + "; ");
                     }
                 }
 
