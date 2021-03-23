@@ -6,7 +6,7 @@ public class Ex05 {
         Scanner in = new Scanner(System.in);
 
         int[] vetor = new int[20];
-        int aux, j=10;
+        int aux;
 
         for (int i = 0; i < vetor.length; i++) {
             System.out.print("Digite um numero: ");
@@ -20,16 +20,19 @@ public class Ex05 {
 
         System.out.println();
 
-        for (int i = 0; i < vetor.length / 2; i++) {
-            aux = vetor[j];
-            vetor[j] = vetor[i];
-            vetor[i] = aux;
-            j++;
-        }
-        System.out.print("Vetor modificado: ");
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
+            aux = vetor[i];
+            vetor[i] = vetor[i + 10];
+            vetor[i + 10] = aux;
+
+            if (i == 9) {
+                System.out.print("Vetor modificado: ");
+                for (int j = 0; j < vetor.length; j++) {
+                    System.out.print(vetor[j] + " ");
+                }
+                System.out.println();
+                break;
+            }
         }
-        System.out.println();
     }
 }
