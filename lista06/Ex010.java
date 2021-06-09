@@ -1,6 +1,5 @@
-import java.util.LinkedHashMap;
 import java.util.Scanner;
-import java.util.function.DoubleBinaryOperator;
+
 public class Ex010 {
     public static void main(String[] args) {
 
