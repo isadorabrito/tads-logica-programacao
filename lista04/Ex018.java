@@ -5,33 +5,30 @@ public class Ex018 {
 
         Scanner in = new Scanner(System.in);
 
-        int cont = 1;
         int idade = 1;
-        int maiorid = 0;
-        int menorid = 200;
-        int somaid = 0;
+        int cont = 0;
         int media = 0;
+        int maior = Integer.MIN_VALUE;
+        int menor = Integer.MAX_VALUE;
 
         while (idade != 0) {
-            System.out.print("Digite a idade da " + cont + " pessoa ou zero para sair: ");
             idade = in.nextInt();
             if (idade == 0) {
                 break;
             }
-            somaid = somaid + idade;
-            if (maiorid < idade) {
-                maiorid = idade;
+            media += idade;
+            if (menor > idade) {
+                menor = idade;
             }
-            if (menorid > idade) {
-                menorid = idade;
+            if (maior < idade) {
+                maior = idade;
             }
-            media = somaid / cont;
             cont++;
         }
-        cont--;
+        media = media / cont;
         System.out.println("Numero de pessoas: " + cont);
         System.out.println("A media entre as idades é " + media);
-        System.out.println("A menor idade é " + menorid);
-        System.out.println("A maior idade é " + maiorid);
+        System.out.println("A menor idade é " + menor);
+        System.out.println("A maior idade é " + maior);
     }
 }
