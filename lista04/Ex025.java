@@ -5,22 +5,29 @@ public class Ex025 {
 
         Scanner in = new Scanner(System.in);
 
-        int n1 = 1;
-        int ntotal = 1;
-        int x = 1;
+        int numero = 1;
+        int somador = 0;
+        int auxiliar = 1;
 
-        while (x > 0) {
-            System.out.println("Digite o numero: \nPara sair digite algum valor menor ou igual a zero: ");
-            x = in.nextInt();
-            while (ntotal < x) {
-                n1 += 2;
-                ntotal += n1;
+        while (numero > 0) {
+            numero = in.nextInt();
+            if (numero <= 0) {
+                break;
             }
-            if (x == ntotal) {
-                System.out.println("\tÉ quadrado perfeito\n");
+
+            while (somador < numero) {
+                if (auxiliar % 2 != 0) {
+                    somador = somador + auxiliar;
+                }
+                auxiliar++;
+            }
+            if (somador == numero) {
+                System.out.println("Quadrado Perfeito");
             } else {
-                System.out.println("\tNao é quadrado perfeito\n");
+                System.out.println("Não é Quadrado Perfeito");
             }
+            auxiliar = 1;
+            somador = 0;
         }
     }
 }
