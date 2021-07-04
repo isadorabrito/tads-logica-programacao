@@ -5,39 +5,24 @@ public class Ex04 {
 
         Scanner in = new Scanner(System.in);
 
-        int[] vetor = new int[10];
-        int[] vetorpar = new int[vetor.length];
-        int[] vetorimpar = new int[vetor.length];
-        int par = 0, impar = 0;
+        int vetor[] = new int[10];
 
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print("Digite um numero: ");
+            System.out.print("Digite o valor do vetor na posicao " + (i + 1) + ": ");
             vetor[i] = in.nextInt();
+        }
 
+        for (int i = 0; i < vetor.length; i++) {
             if (vetor[i] % 2 == 0) {
-                vetorpar[par] = vetor[i];
-                par++;
-            } else {
-                vetorimpar[impar] = vetor[i];
-                impar++;
+                System.out.println(vetor[i] + "- é par.");
             }
         }
+        System.out.println();
 
-        System.out.print("Numeros digitados: ");
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
-        }
-        System.out.println();
-
-        System.out.print("Numeros pares: ");
-        for (int i = 0; i < par; i++) {
-            System.out.print(vetorpar[i] + " ");
-        }
-        System.out.println();
-
-        System.out.print("Numeros ímpares: ");
-        for (int i = 0; i < impar; i++) {
-            System.out.print(vetorimpar[i] + " ");
+            if (vetor[i] % 2 != 0) {
+                System.out.println(vetor[i] + "- é impar.");
+            }
         }
         System.out.println();
     }
