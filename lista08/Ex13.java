@@ -9,7 +9,7 @@ public class Ex13 {
         int x = 0, y = 0, soma = 0;
 
         for (int i = 0; i < vetor.length; i++) {
-            System.out.print("Digite o valor do vetor na posição " + i + ": ");
+            System.out.print("Digite o valor do vetor na posição " + (i) + ": ");
             vetor[i] = in.nextInt();
         }
 
@@ -21,16 +21,6 @@ public class Ex13 {
             if (x == -1 || y == -1) {
                 break;
             }
-
-            System.out.print("Vetor: [");
-            for (int i = 0; i < vetor.length; i++) {
-                if (i == vetor.length - 1) {
-                    System.out.print(vetor[i] + "]");
-                } else {
-                    System.out.print(vetor[i] + " ");
-                }
-            }
-            System.out.println();
 
             for (int i = 0; i < vetor.length; i++) {
                 soma = vetor[x] + vetor[y];
