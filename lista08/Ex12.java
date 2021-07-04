@@ -20,13 +20,9 @@ public class Ex12 {
         }
         System.out.println();
 
-        System.out.print("Vetor: [");
+        System.out.print("Vetor: ");
         for (int i = 0; i < vetor.length; i++) {
-            if (i == vetor.length - 1) {
-                System.out.print(vetor[i] + "]");
-            } else {
-                System.out.print(vetor[i] + " ");
-            }
+            System.out.print(vetor[i] + " ");
         }
         System.out.println();
 
