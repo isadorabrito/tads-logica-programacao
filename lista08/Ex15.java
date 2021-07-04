@@ -6,17 +6,11 @@ public class Ex15 {
         Scanner in = new Scanner(System.in);
 
         int[] vetor = new int[20];
-        int x, c = 0;
+        int x, contador = 0;
 
         for (int i = 0; i < vetor.length; i++) {
             System.out.print("Digite os valores do vetor: ");
             vetor[i] = in.nextInt();
-        }
-        System.out.println();
-
-        System.out.print("Vetor: ");
-        for (int i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
         }
         System.out.println();
 
@@ -26,10 +20,10 @@ public class Ex15 {
         for (int i = 0; i < vetor.length; i++) {
             if (x == vetor[i]) {
                 System.out.println("O valor " + x + " está na posição " + i + " do vetor.");
-                c++;
+                contador++;
             }
         }
-        if (c == 0) {
+        if (contador == 0) {
             System.out.println("O valor " + x + " não consta no vetor.");
         }
 
